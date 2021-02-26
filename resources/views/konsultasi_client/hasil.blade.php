@@ -231,13 +231,13 @@
 						}else{
 
 
-							$tmp = $tmp * $value[0];
+							$tmp = $tmp + ($value[1] * (1-$value[1]));
 							$Cf_pakar = $tmp; 
 
-							$tmp2 = $tmp2 * $value[1];
+							$tmp2 = $tmp2 * $value[0];
 							$Cf_user = $tmp2; 
 
-							$cf1 = $Cf_pakar + ($Cf_user * (1-$Cf_pakar));
+							$cf1 =  $Cf_user + $Cf_pakar ;
 
 					// $tmp = $tmp + $value[0] * (1-$tmp);
 					// $Cf_pakar = $tmp;

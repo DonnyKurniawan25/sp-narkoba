@@ -53,8 +53,8 @@ $id_diag = $char . sprintf("%03s", $noUrut);
                             <th>ID Gejala</th>
                             <th>Nama Penyakit</th>
                             <th>Nama Gejala</th>
-                            <th>MB</th>
-                            <th>MD</th>
+                            <th>CF Pakar</th>
+                            <th>CF User</th>
                             <th>Aksi</th>
                         </tr>
                     </thead>
