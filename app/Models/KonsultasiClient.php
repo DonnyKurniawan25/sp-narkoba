@@ -8,7 +8,5 @@ class KonsultasiClient extends Model
 {
     protected $table = "pertanyaan";
 
-    public $incrementing = false;
-
-    protected $fillable = ['id','jawaban','id_gejala'];
+    protected $fillable = ['id_gejala','jawaban'];
 }

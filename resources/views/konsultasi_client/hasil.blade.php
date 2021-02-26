@@ -64,7 +64,7 @@
 					</thead>
 					<tbody>
 						
-						@foreach($datasoal as $key=>$soal )
+						@foreach($datakonsul as $key=>$soal )
 
 						@if ($data[$soal->id_gejala] == "YA")
 

@@ -18,10 +18,11 @@ class KonsultasiclientController extends Controller
     public function index(Request $request)
     {
         $maxIndex = KonsultasiClient::count('id');
+        $datakonsul = KonsultasiClient::all();
         $datapen = Penyakit::all();
         $datapas = Pasien::find($request->id);
         $datasoal = Pertanyaan::all();
-        return view('konsultasi_client/index', compact('datapas', 'datapen','datasoal', 'maxIndex'));
+        return view('konsultasi_client/index', compact('datapas', 'datapen','datasoal', 'maxIndex','datakonsul'));
     }
 
     /**
@@ -101,9 +102,9 @@ class KonsultasiclientController extends Controller
             ]);
         }
 
-        $datasoal = KonsultasiClient::all();
+        $datakonsul = KonsultasiClient::all();
 
-        return view('konsultasi_client.hasil', compact('data','datasoal'));
+        return view('konsultasi_client.hasil', compact('data','datakonsul'));
         //return redirect()->route('hasil.index',['data' => $data]);
 
     }

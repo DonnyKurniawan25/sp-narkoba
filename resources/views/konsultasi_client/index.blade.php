@@ -149,7 +149,7 @@
       <span class="step"></span> -->
     </div>
     <?php
-    $connect = mysqli_connect("localhost", "root", "", "db_tht");
+    $connect = mysqli_connect("localhost", "root", "", "db_spnarkoba");
     $querydata = mysqli_query($connect, "TRUNCATE TABLE pertanyaan"); 
     ?>
   </form>
